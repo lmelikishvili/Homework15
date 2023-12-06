@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/back_color"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_girl_yelow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="32dp"
+        android:text="Alice Smith"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="Message Text"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="36dp"
+        android:text="4:20 PM"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/tvMessage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUnreads"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/unread_style"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/tvMessage"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
