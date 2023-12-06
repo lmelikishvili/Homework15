@@ -9,12 +9,12 @@ class MessageViewModel: ViewModel() {
     private val _messageFlow = MutableStateFlow<List<Message>>(emptyList())
     val messageFlow: StateFlow<List<Message>> = _messageFlow
     val messages = mutableListOf<Message>(
-        Message(1,"Meliqa Meliqa", "gamarjoja rafer xar?", "4:30",2,true,Message.LastMessageType.TEXT)
+        Message(1,"Meliqa Meliqa", "gamarjoja rafer ?", "4:30",2,true,Message.LastMessageType.TEXT)
     )
 
 //    fun addMessage(){
 //        _messageFlow.value = messageFlow.value.toMutableList().also {
-//            it.add(Message(1,"Meliqa Meliqa", "gamarjoja rafer xar?", "4:30",2,true,Message.LastMessageType.TEXT))
+//            it.add(Message(1,"Meliqa Meliqa", "gamarjoja rafer xar bijooo?", "4:30",2,true,Message.LastMessageType.TEXT))
 //        }
 //    }
 
