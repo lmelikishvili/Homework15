@@ -11,23 +11,11 @@ import retrofit2.http.Query
 
 object ApiMessage {
 
-    private val BASE_URL = "https://run.mocky.io/v3/"
 
-    private val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
-
-    private val retrofit: Retrofit by lazy {
-        Retrofit.Builder()
-            .baseUrl(BASE_URL)
-            .addConverterFactory(MoshiConverterFactory.create(moshi))
-            .build()
-    }
-
-    val apiService: ApiService by lazy {
-        retrofit.create(ApiService::class.java)
-    }
 }
 
 interface ApiService{
-    @GET("message")
-    fun fetchMessages(@Query("page") page: String): Call<MessageResponse>
+    @GET("v3/744fa574-a483-43f6-a1d7-c65c87b5d9b2")
+    fun fetchMessages(): Call<MessageResponse>
+    //fun fetchMessages(@Query("page") page: String): Call<MessageResponse>
 }
